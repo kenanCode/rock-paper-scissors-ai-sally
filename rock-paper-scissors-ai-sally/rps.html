@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="rps.css" />
+    <script
+      src="https://kit.fontawesome.com/2c47452db4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <p class="text">
+        Hi, I'm AI Sally. I dare you to score 10 wins before I do in
+        rock-paper-scissors.
+      </p>
+    </div>
+
+    <div class="icons">
+      <button id="r-icon">
+        <i class="fa-sharp fa-regular fa-hand-back-fist fa-10x"></i>
+      </button>
+      <button id="p-icon">
+        <i class="fa-solid fa-note-sticky fa-10x"></i>
+      </button>
+      <button id="s-icon">
+        <i class="fa-solid fa-scissors fa-10x"></i>
+      </button>
+      <button
+        class="reset"
+        onclick="score.wins = 0;
+        score.losses = 0;
+        score.ties = 0; 
+        localStorage.removeItem('score'); updateScoreElement();"
+      >
+        <i class="fa-solid fa-rotate-left"></i>
+      </button>
+
+      <p class="main-result"></p>
+      <p class="main-moves"></p>
+      <p class="main-score"></p>
+    </div>
+
+    <script src="rps.js"></script>
+  </body>
+</html>

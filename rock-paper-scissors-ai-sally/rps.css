@@ -1,0 +1,112 @@
+body {
+  background-color: white;
+  overflow: hidden;
+}
+
+.icons {
+  text-align: center;
+  position: relative;
+  top: 150px;
+  animation-name: slideUpIcons;
+  animation-duration: 3s;
+}
+
+@keyframes slideUpIcons {
+  from {
+    transform: translateY(300%);
+  }
+}
+
+button {
+  margin: 15px;
+  cursor: pointer;
+  border: solid 5px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#r-icon {
+  border-color: orange;
+}
+
+#r-icon:active {
+  border-color: rgb(143, 93, 0);
+}
+
+#p-icon {
+  border-color: green;
+}
+
+#p-icon:active {
+  border-color: rgb(0, 82, 0);
+}
+
+#s-icon {
+  border-color: blue;
+}
+
+#s-icon:active {
+  border-color: rgb(0, 0, 96);
+}
+
+.reset {
+  border-color: purple;
+  margin-left: -10px;
+  position: relative;
+  top: 13.5px;
+}
+
+.main-score {
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+.main-moves {
+  font-family: monospace;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.main-result {
+  font-family: monospace;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.reset:active {
+  border-color: rgb(84, 0, 84);
+}
+
+.container {
+  display: inline-block;
+}
+
+.text {
+  color: red;
+  font-family: monospace;
+  font-size: 2em;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(76), cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
